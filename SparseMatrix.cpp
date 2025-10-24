@@ -58,6 +58,7 @@ static void recalcularExtremos(Node* inicio, int& maxX, int& maxY){
 
 // metodos principales 
 
+  // No se almacenan ceros para mantener la matriz realmente "poco poblada"
 void SparseMatrix::add(int value, int xPos, int yPos){
     if (xPos < 0 || yPos < 0){
         cout << "Error coordenadas invalidas.\n";
@@ -81,7 +82,7 @@ void SparseMatrix::add(int value, int xPos, int yPos){
     }
 
 }
-
+// Obtener el valor según coordenadas
 int SparseMatrix::get(int xPos, int yPos){
     Node* previo = buscarPrevio(start, xPos, yPos);
     Node* actual = (previo == nullptr) ? start : previo->next;
@@ -90,6 +91,7 @@ int SparseMatrix::get(int xPos, int yPos){
 
 }
 
+// Eliminar un nodo de la lista
 void SparseMatrix::remove(int xPos, int yPos) {
     Node* previo = buscarPrevio(start, xPos, yPos);
     Node* actual = (previo == nullptr) ? start : previo->next;

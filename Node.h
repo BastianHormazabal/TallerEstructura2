@@ -6,6 +6,6 @@ struct Node {
     int value;
     Node* next;
     Node(int vx, int vy, int vval) : x(vx) , y(vy), value(vval), next(nullptr){}
-
+    // siempre inicializo el puntero para evitar basura
 };
 
