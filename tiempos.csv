@@ -1,0 +1,11 @@
+algoritmo,n_datos,densidad,tiempo_ms,dispositivo
+insertar, 50,BAJA,0.0073,PC_Test
+insertar, 50,ALTA,0.0078,PC_Test
+insertar, 250,BAJA,0.0802,PC_Test
+insertar, 250,ALTA,0.0879,PC_Test
+insertar, 500,BAJA,0.2694,PC_Test
+insertar, 500,ALTA,0.269,PC_Test
+insertar, 1000,BAJA,0.8376,PC_Test
+insertar, 1000,ALTA,0.8368,PC_Test
+insertar, 5000,BAJA,44.4297,PC_Test
+insertar, 5000,ALTA,45.6107,PC_Test
